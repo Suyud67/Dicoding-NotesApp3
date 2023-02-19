@@ -1,0 +1,274 @@
+/* import font */
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+
+/* color tamplate */
+:root {
+  --color-primer: #334979;
+  --color-seconder: #eff4fd;
+  --font-color-primer: #011b5f;
+}
+
+[data-theme='dark'] {
+  --font-color-primer: #eff4fd;
+  --color-seconder: #333;
+  color: #f6f6f6;
+}
+
+/* akhir reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: var(--font-color-primer);
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  font-family: 'karla';
+  background-color: var(--color-seconder);
+}
+
+input,
+textarea {
+  font-family: 'karla';
+}
+
+/* akhir reset */
+
+/* header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: var(--color-primer);
+  color: #f6f6f6;
+}
+
+.logo {
+  font-size: 1.2em;
+}
+
+#search-note {
+  padding: 10px;
+  font-size: 16px;
+  margin-right: 1rem;
+}
+
+.btn-arsip {
+  color: #f6f6f6;
+  padding: 1rem;
+}
+/* akhir header */
+
+/* section header */
+.header {
+  font-size: 1.6em;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: var(--font-color-primer);
+}
+
+.navbar-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* akhir section */
+
+/* notes */
+.container-notes {
+  padding: 1rem;
+}
+
+.notes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 10px;
+}
+
+.note h3 {
+  font-size: 2em;
+}
+
+.note i,
+p {
+  font-size: 1.3em;
+}
+
+.link-detail {
+  display: inline-block;
+  margin-top: 5px;
+}
+
+.link-detail:hover {
+  text-decoration: underline;
+}
+
+/* akhir notes */
+
+/* form */
+.container-form {
+  width: 80%;
+  margin: 1rem auto;
+}
+
+#form {
+  width: 60%;
+  margin: 2rem auto;
+}
+
+#note-title,
+#desc-note {
+  width: 100%;
+  padding: 10px;
+  font-size: 1.5em;
+  margin-bottom: 1rem;
+  outline: none;
+  background: none;
+  border: none;
+  color: var(--font-color-primer);
+}
+
+#note-title {
+  border-bottom: 3px solid #334979;
+}
+
+#desc-note {
+  border-left: 3px solid #334979;
+  border-right: 3px solid #334979;
+}
+
+#btnSubmit {
+  padding: 1rem;
+  cursor: pointer;
+  background: var(--color-primer);
+  color: #f6f6f6;
+  border: none;
+  border-radius: 10px;
+}
+/* akhir form */
+
+/* detail page */
+.detail-note {
+  width: 60%;
+  margin: 4rem auto;
+}
+
+.detail-note h3 {
+  font-size: 2em;
+}
+
+.detail-note i,
+p {
+  font-size: 1.3em;
+}
+
+.detail-note #btn-arsip {
+  margin-right: 1rem;
+}
+
+#btn-arsip,
+#btn-delete,
+#btn-undo {
+  padding: 10px;
+  font-size: 1.4em;
+  display: inline-block;
+}
+
+#btn-arsip:hover,
+#btn-delete:hover,
+#btn-undo:hover {
+  text-decoration: underline;
+}
+
+/* unchived page */
+.container-unchivedNotes {
+  width: 90%;
+  margin: 4rem auto;
+}
+
+#btn-undo {
+  margin-right: 1rem;
+}
+
+/* btn navigate */
+.btn-home {
+  position: absolute;
+  top: 3%;
+  left: 2%;
+  color: var(--font-color-primer);
+  font-size: 1.4em;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-add {
+  font-size: 2.5em;
+  display: block;
+  position: fixed;
+  color: var(--font-color-primer);
+  bottom: 5%;
+  right: 5%;
+  padding: 0.5rem;
+}
+
+.btn-logout {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #f6f6f6;
+  padding: 0.5rem;
+  font-size: 1.2em;
+}
+
+.btn-toggle {
+  background: none;
+  border: none;
+  font-size: 1.5em;
+  color: #f6f6f6;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+/* error page */
+.error-page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.error-page img {
+  width: 50%;
+}
+/* error page */
+.loading {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading img {
+  width: 20%;
+}
+
+/* link */
+.link {
+  text-align: center;
+}
+
+.link-direct {
+  text-decoration: underline;
+}

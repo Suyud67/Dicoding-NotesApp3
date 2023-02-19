@@ -1,0 +1,71 @@
+@media screen and (max-width: 600px) {
+  header {
+    width: 80%;
+    margin: 1rem auto;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .logo {
+    font-size: 1.3em;
+  }
+
+  #search-note {
+    font-size: 1.2em;
+    margin: 1rem 0;
+  }
+  /* akhir header */
+
+  /* notes */
+  .header {
+    font-size: 2em;
+  }
+
+  .note h3 {
+    font-size: 2em;
+  }
+
+  .note i,
+  p {
+    font-size: 1.5em;
+  }
+
+  /* akhir notes */
+
+  /* btn */
+  .btn-arsip {
+    color: #011b5f;
+    position: fixed;
+    bottom: 10%;
+    right: 0%;
+    display: block;
+  }
+
+  .btn-add {
+    right: 0%;
+  }
+
+  .btn-arsip,
+  .btn-home {
+    padding: 0.5rem;
+  }
+
+  .link-detail {
+    padding: 10px;
+  }
+  /* akhir btn */
+
+  /* form */
+  .container-form {
+    width: 90%;
+    margin: 4rem auto;
+  }
+
+  #note-title,
+  #desc-note {
+    width: 100%;
+    font-size: 18px;
+  }
+
+  /* akhir form */
+}
